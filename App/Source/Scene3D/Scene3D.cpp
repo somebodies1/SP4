@@ -325,6 +325,17 @@ bool CScene3D::Init(void)
 	// Add the suv to the cSolidObjectManager
 	cSolidObjectManager->Add(suv);
 
+	// Initialise a suv
+	fCheckHeight = cTerrain->GetHeight(-2.0f, 2.0f);
+	SUV* suv2 = new SUV(glm::vec3(5.0f, fCheckHeight, 5.0f));
+	suv2->SetShader("Shader3DNoColour");
+	suv2->SetLODStatus(true);
+	suv2->Init();
+	suv2->InitCollider("Shader3D_Line", glm::vec4(0.0f, 0.0f, 1.0f, 1.0f));
+
+	// Add the suv to the cSolidObjectManager
+	cSolidObjectManager->Add(suv2);
+
 	// Initialise a dinosaur
 	fCheckHeight = cTerrain->GetHeight(-2.0f, 2.0f);
 	Dinosaur* dino = new Dinosaur(glm::vec3(10.0f, fCheckHeight, 5.0f));
