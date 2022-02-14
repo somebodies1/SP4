@@ -39,6 +39,7 @@
     <ClCompile Include="Source\Scene3D\CameraEffects\DirtScreen.cpp" />
     <ClCompile Include="Source\Scene3D\CameraEffects\LoseScreen.cpp" />
     <ClCompile Include="Source\Scene3D\CameraEffects\ScopeScreen.cpp" />
+    <ClCompile Include="Source\Scene3D\CameraEffects\SweatScreen.cpp" />
     <ClCompile Include="Source\Scene3D\CameraEffects\WinScreen.cpp" />
     <ClCompile Include="Source\Scene3D\Entities\Baryonyx.cpp" />
     <ClCompile Include="Source\Scene3D\Entities\Charano.cpp" />
@@ -108,6 +109,7 @@
     <ClInclude Include="Source\Scene3D\CameraEffects\DirtScreen.h" />
     <ClInclude Include="Source\Scene3D\CameraEffects\LoseScreen.h" />
     <ClInclude Include="Source\Scene3D\CameraEffects\ScopeScreen.h" />
+    <ClInclude Include="Source\Scene3D\CameraEffects\SweatScreen.h" />
     <ClInclude Include="Source\Scene3D\CameraEffects\WinScreen.h" />
     <ClInclude Include="Source\Scene3D\Entities\Baryonyx.h" />
     <ClInclude Include="Source\Scene3D\Entities\Charano.h" />
