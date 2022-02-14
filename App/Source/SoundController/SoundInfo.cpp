@@ -12,6 +12,7 @@ CSoundInfo::CSoundInfo(void)
 	, bIsLooped(false)
 	, eSoundType(_2D)
 	, vec3dfSoundPos(vec3df(0.0, 0.0, 0.0))
+	, Overlap(false)
 {
 }
 
@@ -37,18 +38,20 @@ CSoundInfo::~CSoundInfo(void)
  @param vec3dfSoundPos A vec3df variable which contains the 3D position of the sound
  @return A bool value. true is this class instance was initialised, else false
  */
-bool CSoundInfo::Init(	const int ID,
-						ISoundSource* pSoundSource,
-						const bool bIsLooped,
-						SOUNDTYPE eSoundType,
-						vec3df vec3dfSoundPos)
+bool CSoundInfo::Init(const int ID,
+	ISoundSource* pSoundSource,
+	const bool bIsLooped,
+	const bool Overlap,
+	SOUNDTYPE eSoundType,
+	vec3df vec3dfSoundPos)
 {
 	this->ID = ID;
 	this->pSoundSource = pSoundSource;
 	this->bIsLooped = bIsLooped;
 	this->eSoundType = eSoundType;
 	this->vec3dfSoundPos = vec3dfSoundPos;
-	
+	this->Overlap = Overlap;
+
 	return true;
 }
 
@@ -140,4 +143,9 @@ void CSoundInfo::SetPosition(const float x, const float y, const float z)
 vec3df CSoundInfo::GetPosition(void) const
 {
 	return vec3dfSoundPos;
+}
+
+bool CSoundInfo::GetOverlap()
+{
+	return Overlap;
 }
