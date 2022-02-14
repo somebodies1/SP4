@@ -81,7 +81,7 @@ bool CSoundController::LoadSound(string filename,
 		bPreload);
 
 
-	// Trivial Rejection : Invalid pointer provided
+	// Trivial Rejection : Invalid pointer provided gjghkgh
 	if (pSoundSource == nullptr)
 	{
 		cout << "Unable to load sound " << filename.c_str() << endl;
