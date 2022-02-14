@@ -4,7 +4,7 @@
 using namespace std;
 
 /**
- @brief Constructor TEST PUSH
+ @brief Constructor TEST PUSH nice push
  */
 CSoundController::CSoundController(void)
 	: cSoundEngine(NULL)
