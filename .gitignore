@@ -30,6 +30,12 @@
 *.exe
 *.out
 *.app
-.vs/NYP_Framework/v16/ipch/AutoPCH/4784a79c4a2960a/SCENE3D.ipch
-.vs/NYP_Framework/v16/Browse.VC.opendb
-.vs/NYP_Framework/v16/ipch/AutoPCH/8fa50939549c3f4a/SCENE3D.ipch
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
