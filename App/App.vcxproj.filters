@@ -251,9 +251,6 @@
     <ClCompile Include="Source\Scene3D\CameraEffects\DirtScreen.cpp">
       <Filter>Scene3D\CameraEffects</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Scene3D\WeaponInfo\Card2.cpp">
-      <Filter>Scene3D\WeaponInfo</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Scene3D\CameraEffects\SweatScreen.cpp">
       <Filter>Scene3D\CameraEffects</Filter>
     </ClCompile>
@@ -456,9 +453,6 @@
     </ClInclude>
     <ClInclude Include="Source\Scene3D\CameraEffects\DirtScreen.h">
       <Filter>Scene3D\CameraEffects</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Scene3D\WeaponInfo\Card2.h">
-      <Filter>Scene3D\WeaponInfo</Filter>
     </ClInclude>
     <ClInclude Include="Source\Scene3D\CameraEffects\SweatScreen.h">
       <Filter>Scene3D\CameraEffects</Filter>

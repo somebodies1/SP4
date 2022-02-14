@@ -72,7 +72,6 @@
     <ClCompile Include="Source\Scene3D\Waypoint\Waypoint.cpp" />
     <ClCompile Include="Source\Scene3D\Waypoint\WaypointManager.cpp" />
     <ClCompile Include="Source\Scene3D\WeaponInfo\Card.cpp" />
-    <ClCompile Include="Source\Scene3D\WeaponInfo\Card2.cpp" />
     <ClCompile Include="Source\Scene3D\WeaponInfo\Pistol.cpp" />
     <ClCompile Include="Source\Scene3D\WeaponInfo\Projectile.cpp" />
     <ClCompile Include="Source\Scene3D\WeaponInfo\ProjectileManager.cpp" />
@@ -142,7 +141,6 @@
     <ClInclude Include="Source\Scene3D\Waypoint\Waypoint.h" />
     <ClInclude Include="Source\Scene3D\Waypoint\WaypointManager.h" />
     <ClInclude Include="Source\Scene3D\WeaponInfo\Card.h" />
-    <ClInclude Include="Source\Scene3D\WeaponInfo\Card2.h" />
     <ClInclude Include="Source\Scene3D\WeaponInfo\Pistol.h" />
     <ClInclude Include="Source\Scene3D\WeaponInfo\Projectile.h" />
     <ClInclude Include="Source\Scene3D\WeaponInfo\ProjectileManager.h" />
