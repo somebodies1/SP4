@@ -8,3 +8,9 @@ v16/
 App/
 Debug/
 *.obj
+*.tlog
+
+#Tlog stuff
+Library/
+Debug/
+*.tlog
