@@ -449,6 +449,17 @@ bool CScene3D::Update(const double dElapsedTime)
 		}
 		cPlayer3D->SetToJump();
 	}
+
+	if (CKeyboardController::GetInstance()->IsKeyDown(GLFW_KEY_LEFT_SHIFT))
+	{
+		cPlayer3D->SetMovementSpeed(15);
+		CCameraEffectsManager::GetInstance()->Get("SweatScreen")->SetStatus(true);
+	}
+	else
+	{
+		cPlayer3D->SetMovementSpeed(10);
+		CCameraEffectsManager::GetInstance()->Get("SweatScreen")->SetStatus(false);
+	}
 		
 
 	if (CKeyboardController::GetInstance()->IsKeyDown(GLFW_KEY_G) && cPlayer3D->GetSMovement() == CPlayer3D::PLAYER_SMOVEMENT::STAND)

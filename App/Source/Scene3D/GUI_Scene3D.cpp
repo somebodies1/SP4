@@ -17,7 +17,7 @@
 //Include Win + Lose Screen
 #include "CameraEffects/WinScreen.h"
 #include "CameraEffects/LoseScreen.h"
-
+#include "CameraEffects/SweatScreen.h"
 
 #include "CameraEffects/DirtScreen.h"
 
@@ -114,7 +114,11 @@ bool CGUI_Scene3D::Init(void)
 	CCameraShake* cCameraShake = new CCameraShake();
 	cCameraShake->Init();
 	cCameraEffectsManager->Add("CameraShake", cCameraShake);
-
+	//SweatScreen
+	CSweatScreen* cSweatScreen = new CSweatScreen();
+	cSweatScreen->Init();
+	cSweatScreen->SetShader("Shader_GUI");
+	cCameraEffectsManager->Add("SweatScreen", cSweatScreen);
 	// Add WinScreen
 	CWinScreen* cWinScreen = new CWinScreen();
 	cWinScreen->Init();
