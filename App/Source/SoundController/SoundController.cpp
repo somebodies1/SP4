@@ -67,17 +67,18 @@ bool CSoundController::Init(void)
  @param vec3dfSoundPos A vec3df variable which contains the 3D position of the sound
  @return A bool value. True if the sound was loaded, else false.
  */
-bool CSoundController::LoadSound(	string filename,
-									const int ID,
-									const bool bPreload,
-									const bool bIsLooped,
-									CSoundInfo::SOUNDTYPE eSoundType,
-									vec3df vec3dfSoundPos)
+bool CSoundController::LoadSound(string filename,
+	const int ID,
+	const bool bPreload,
+	const bool bIsLooped,
+	const bool Overlap,
+	CSoundInfo::SOUNDTYPE eSoundType,
+	vec3df vec3dfSoundPos)
 {
 	// Load the sound from the file
 	ISoundSource* pSoundSource = cSoundEngine->addSoundSourceFromFile(filename.c_str(),
-																	E_STREAM_MODE::ESM_NO_STREAMING, 
-																	bPreload);
+		E_STREAM_MODE::ESM_NO_STREAMING,
+		bPreload);
 
 
 	// Trivial Rejection : Invalid pointer provided
@@ -96,9 +97,9 @@ bool CSoundController::LoadSound(	string filename,
 	// Add the entity now
 	CSoundInfo* cSoundInfo = new CSoundInfo();
 	if (eSoundType == CSoundInfo::SOUNDTYPE::_2D)
-		cSoundInfo->Init(ID, pSoundSource, bIsLooped);
+		cSoundInfo->Init(ID, pSoundSource, bIsLooped, Overlap);
 	else
-		cSoundInfo->Init(ID, pSoundSource, bIsLooped, eSoundType, vec3dfSoundPos);
+		cSoundInfo->Init(ID, pSoundSource, bIsLooped, Overlap, eSoundType, vec3dfSoundPos);
 
 	// Set to soundMap
 	soundMap[ID] = cSoundInfo;
@@ -118,7 +119,7 @@ void CSoundController::PlaySoundByID(const int ID)
 		cout << "Sound #" << ID << " is not playable." << endl;
 		return;
 	}
-	else if (cSoundEngine->isCurrentlyPlaying(pSoundInfo->GetSound()))
+	else if (cSoundEngine->isCurrentlyPlaying(pSoundInfo->GetSound()) && !pSoundInfo->GetOverlap())
 	{
 		cout << "Sound #" << ID << " is currently being played." << endl;
 		return;
@@ -126,15 +127,15 @@ void CSoundController::PlaySoundByID(const int ID)
 
 	if (pSoundInfo->GetSoundType() == CSoundInfo::SOUNDTYPE::_2D)
 	{
-		cSoundEngine->play2D(	pSoundInfo->GetSound(), 
-								pSoundInfo->GetLoopStatus());
+		cSoundEngine->play2D(pSoundInfo->GetSound(),
+			pSoundInfo->GetLoopStatus());
 	}
 	else if (pSoundInfo->GetSoundType() == CSoundInfo::SOUNDTYPE::_3D)
 	{
 		cSoundEngine->setListenerPosition(vec3dfListenerPos, vec3dfListenerDir);
-		cSoundEngine->play3D(	pSoundInfo->GetSound(), 
-								pSoundInfo->GetPosition(), 
-								pSoundInfo->GetLoopStatus());
+		cSoundEngine->play3D(pSoundInfo->GetSound(),
+			pSoundInfo->GetPosition(),
+			pSoundInfo->GetLoopStatus());
 	}
 }
 
@@ -164,7 +165,7 @@ bool CSoundController::MasterVolumeIncrease(void)
 bool CSoundController::MasterVolumeDecrease(void)
 {
 	// Get the current volume
-	float fCurrentVolume = cSoundEngine->getSoundVolume() - 0.1f;
+	float fCurrentVolume = cSoundEngine->getSoundVolume() - 0.5f;
 	cout << "MasterVolumeDecrease: fCurrentVolume = " << fCurrentVolume << endl;
 	// Check if the minimum volume has been reached
 	if (fCurrentVolume < 0.0f)
