@@ -17,7 +17,7 @@
   Mesh.cpp
   MeshBuilder.cpp
   SpriteAnimation.cpp
-C:\Users\Ridwan\Desktop\Pie V2\Year 2 Sem 2\Studio Project 4\Backup\Library\Source\Primitives\SpriteAnimation.cpp(75,62): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+C:\Users\Ridwan\source\repos\SP4\Library\Source\Primitives\SpriteAnimation.cpp(75,62): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
   ShaderManager.cpp
   Generating Code...
   Compiling...
@@ -29,4 +29,4 @@ C:\Users\Ridwan\Desktop\Pie V2\Year 2 Sem 2\Studio Project 4\Backup\Library\Sour
   FPSCounter.cpp
   StopWatch.cpp
   Generating Code...
-  Library.vcxproj -> C:\Users\Ridwan\Desktop\Pie V2\Year 2 Sem 2\Studio Project 4\Backup\Debug\Library.lib
+  Library.vcxproj -> C:\Users\Ridwan\source\repos\SP4\Debug\Library.lib
