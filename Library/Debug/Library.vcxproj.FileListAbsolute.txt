@@ -6,3 +6,5 @@ C:\Users\Julius\Source\Repos\SP4\Debug\Library.pdb
 C:\Users\Julius\Source\Repos\SP4\Library\Debug\Library.pdb
 C:\Users\Ridwan\source\repos\SP4\Debug\Library.pdb
 C:\Users\Ridwan\source\repos\SP4\Library\Debug\Library.pdb
+C:\Users\Julius\Source\Repos\SP4(2)\Debug\Library.pdb
+C:\Users\Julius\Source\Repos\SP4(2)\Library\Debug\Library.pdb
