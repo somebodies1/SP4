@@ -2,3 +2,5 @@ C:\Users\Ridwan\Desktop\Pie V2\Year 2 Sem 2\3D Game Creation\Assignment 2\NYP_Fr
 C:\Users\Ridwan\Desktop\Pie V2\Year 2 Sem 2\3D Game Creation\Assignment 2\NYP_Framework_A2\Library\Debug\Library.pdb
 C:\Users\Ridwan\Desktop\Pie V2\Year 2 Sem 2\Studio Project 4\Backup\Debug\Library.pdb
 C:\Users\Ridwan\Desktop\Pie V2\Year 2 Sem 2\Studio Project 4\Backup\Library\Debug\Library.pdb
+C:\Users\Julius\Source\Repos\SP4\Debug\Library.pdb
+C:\Users\Julius\Source\Repos\SP4\Library\Debug\Library.pdb
