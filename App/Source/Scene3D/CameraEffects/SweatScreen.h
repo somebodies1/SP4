@@ -5,7 +5,7 @@
  */
 #pragma once
 
-// Include CCameraEffects lxzh
+// Include CCameraEffects lxzh long xie pand xie
 #include "CameraEffects.h"
 
 class CSweatScreen : public CCameraEffects
