@@ -1,14 +1,8 @@
 .vs/
 NYP_Framework/
 v16/
-*.opensdf
-*.sdf
-*.opendb
-*.opensdf
-*.suo
-*.user
-*.db
-ipch/
+*/
+!ipch/
 
 #Stuff
 App/
