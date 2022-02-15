@@ -263,6 +263,9 @@
     <ClCompile Include="Source\Scene3D\Powerup\PowerUpManager.cpp">
       <Filter>Scene3D\Powerup</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Scene3D\Entities\SpeedUpbox.cpp">
+      <Filter>Scene3D\Entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Application.h">
@@ -471,6 +474,9 @@
     </ClInclude>
     <ClInclude Include="Source\Scene3D\Powerup\PowerUpManager.h">
       <Filter>Scene3D\Powerup</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene3D\Entities\SpeedUpbox.h">
+      <Filter>Scene3D\Entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -431,7 +431,7 @@ bool CPlayer3D::Update(const double dElapsedTime)
 	// Update the Jump/Fall
 	UpdateJumpFall(dElapsedTime);
 
-	CEntity3D::PowerupCheck(dElapsedTime);
+	CEntity3D::PowerupUpdate(dElapsedTime);
 
 	// If the camera is attached to this player, then update the camera
 	if (cCamera)

@@ -81,7 +81,7 @@ bool CEntity3D::Init(void)
 
 	bStatus = true;
 	maxHP = currentHP = 100;
-
+	//activepowerList;
 	return true;
 }
 
@@ -237,11 +237,83 @@ void CEntity3D::RollbackPosition(void)
 	vec3Position = vec3PreviousPosition;
 }
 
-void CEntity3D::PowerupCheck(const double dElapsedTime)
+void CEntity3D::PowerupUpdate(const double dElapsedTime)
 {
 	for (int i = 0; i < activepowerList.size(); i++)
 	{
-		activepowerList[i]->Update(this, dElapsedTime);
+		switch (activepowerList[i]->Update(dElapsedTime))
+		{
+		case powerup::SPEED:
+			if (activepowerList[i]->getTimeLeft() <= 0.f)
+			{
+				activepowerList[i]->setDead(true);
+			}
+			break;
+		case powerup::INVINCIBLE:
+			break;
+		case powerup::FIRERATE:
+			break;
+		}
 	}
+
+	std::vector<powerup*> toDelete;
+	for (int i = 0; i < activepowerList.size(); i++)
+	{
+		if (activepowerList[i]->getDead())
+		{
+			toDelete.push_back(activepowerList[i]);
+		}
+	}
+	
+	for (int j = toDelete.size(); j > 0; --j)
+	{
+		switch (toDelete[j]->getpowertype())
+		{
+		case powerup::SPEED:
+			this->SetMovementSpeed(this->GetMovementSpeed() * 0.5f); //effect
+			break;
+		case powerup::INVINCIBLE:
+			break;
+		case powerup::FIRERATE:
+			break;
+		}
+	}
+
+	toDelete.clear();
+}
+
+void CEntity3D::AddPowerup(powerup::POWERUPTYPE pType, float newTime)
+{
+	switch (pType)
+	{
+	case powerup::SPEED:
+		if (AddPowerupTime(pType, newTime))
+		{
+			return;
+		}
+		else
+		{
+			powerup* p = new powerup(pType, newTime); //create new powerup
+			activepowerList.push_back(p); //push to vector
+			this->SetMovementSpeed(this->GetMovementSpeed() * 2.f); //effect
+		}
+		break;
+	case powerup::INVINCIBLE:
+		break;
+	case powerup::FIRERATE:
+		break;
+	}
+}
+
+bool CEntity3D::AddPowerupTime(powerup::POWERUPTYPE pType, float newT)
+{
+	for (int i = 0; i < activepowerList.size(); ++i)
+	{
+		if (activepowerList[i]->getpowertype() == pType)
+		{
+			activepowerList[i]->setTimeLeft(newT);
+		}
+	}
+	return false;
 }
 

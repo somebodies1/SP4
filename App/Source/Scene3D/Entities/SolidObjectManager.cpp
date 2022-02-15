@@ -259,6 +259,19 @@ bool CSolidObjectManager::CheckForCollision(void)
 					cout << "** Collision between Entity and Structure ***" << endl;
 					break;
 				}
+				if (
+					(((*it)->GetType() >= CSolidObject::TYPE::PLAYER) &&
+					((*it_other)->GetType() == CSolidObject::TYPE::POWER_UP)
+					))
+				{
+					(*it)->RollbackPosition();
+					//if (((*it)->GetType() == CSolidObject::TYPE::PLAYER))
+						//bResult = true;
+						(*it_other)->SetStatus(false);
+						cout << "** Collision between Entity and powerUP ***" << endl;
+					break;
+				}
+
 			}
 		}
 	}

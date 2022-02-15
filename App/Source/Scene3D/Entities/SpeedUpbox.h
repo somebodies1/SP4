@@ -1,5 +1,5 @@
 /**
- CStructure3D
+ CSpeedUpbox
  By: Toh Da Jun
  Date: Apr 2020
  */
@@ -20,18 +20,18 @@
 using namespace std;
 
 // An abstract camera class that processes input and calculates the corresponding Euler Angles, Vectors and Matrices for use in OpenGL
-class CStructure3D : public CSolidObject
+class CSpeedUpbox : public CSolidObject
 {
 public:
 	// Default Constructor
-	CStructure3D(void);
+	CSpeedUpbox(void);
 
 	// Constructor with vectors
-	CStructure3D(	const glm::vec3 vec3Position,
+	CSpeedUpbox(	const glm::vec3 vec3Position,
 					const glm::vec3 vec3Front = glm::vec3(0.0f, 0.0f, -1.0f));
 
 	// Destructor
-	virtual ~CStructure3D(void);
+	virtual ~CSpeedUpbox(void);
 
 	// Initialise this class instance
 	bool Init(void);

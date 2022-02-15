@@ -289,6 +289,16 @@ bool CScene3D::Init(void)
 	cStructure3D->InitCollider("Shader3D_Line", glm::vec4(0.0f, 0.0f, 1.0f, 1.0f));
 	//cStructure3D->SetScale(glm::vec3(0.5f));
 
+	
+	// Initialise a CStructure3D
+	float fCheckHeight1;
+	fCheckHeight1 = cTerrain->GetHeight(2.0f, -2.0f);
+	CSpeedUpbox* cSpeedUpbox = new CSpeedUpbox(glm::vec3(5.0f, fCheckHeight1, -2.0f));
+	cSpeedUpbox->SetShader("Shader3D");
+	cSpeedUpbox->Init();
+	cSpeedUpbox->InitCollider("Shader3D_Line", glm::vec4(0.0f, 0.0f, 1.0f, 1.0f));
+	cSolidObjectManager->Add(cSpeedUpbox);
+
 	// Add the cStructure3D to the cSolidObjectManager
 	cSolidObjectManager->Add(cStructure3D);
 

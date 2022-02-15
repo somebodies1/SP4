@@ -1,5 +1,5 @@
 #pragma once
-#include "Primitives\Entity3D.h"
+//#include "Primitives\Entity3D.h"
 #include<vector>
 #include<iostream>
 #include <string>
@@ -18,20 +18,24 @@ public:
 	};
 	
 	powerup();
-	powerup(POWERUPTYPE power1, float timer2);
+	powerup(POWERUPTYPE power1, float timeL);
 	~powerup();
 
-	void Update(CEntity3D* owner, double dt);
+	powerup::POWERUPTYPE Update(double dt);
 	void setpowertype(POWERUPTYPE power);
 	POWERUPTYPE getpowertype();
 
-	void Speed(CEntity3D* owner, double dt);
+	void Speed(double dt);
 
-	void settimer(float timer1);
-	float gettimer();
-	void powerupACTION(double dt);
+	void setTimeLeft(float timeL);
+	float getTimeLeft();
+	void decreaseTime(double dt);
+
+	void setDead(bool dead);
+	bool getDead();
+	
 protected:
-	float timer;
 	float timeLeft;
 	POWERUPTYPE powertype;
+	bool dead;
 };

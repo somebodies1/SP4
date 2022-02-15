@@ -1,9 +1,9 @@
 /**
- CStructure3D
+ CSpeedUpbox
  By: Toh Da Jun
  Date: Apr 2020
  */
-#include "Structure3D.h"
+#include "SpeedUpbox.h"
 
 // Include ShaderManager
 #include "RenderControl/ShaderManager.h"
@@ -20,7 +20,7 @@ using namespace std;
 /**
  @brief Default Constructor
  */
-CStructure3D::CStructure3D(void)
+CSpeedUpbox::CSpeedUpbox(void)
 {
 	// Set the default position to the origin
 	vec3Position = glm::vec3(0.0f, fHeightOffset, 0.0f);
@@ -33,7 +33,7 @@ CStructure3D::CStructure3D(void)
  @param yaw A const float variable which contains the yaw of the camera
  @param pitch A const float variable which contains the pitch of the camera
  */
-CStructure3D::CStructure3D(	const glm::vec3 vec3Position,
+CSpeedUpbox::CSpeedUpbox(	const glm::vec3 vec3Position,
 							const glm::vec3 vec3Front)
 {
 	this->vec3Position = glm::vec3(vec3Position.x, vec3Position.y + fHeightOffset, vec3Position.z);
@@ -43,7 +43,7 @@ CStructure3D::CStructure3D(	const glm::vec3 vec3Position,
 /**
  @brief Destructor
  */
-CStructure3D::~CStructure3D(void)
+CSpeedUpbox::~CSpeedUpbox(void)
 {
 }
 
@@ -51,13 +51,13 @@ CStructure3D::~CStructure3D(void)
  @brief Initialise this class instance
  @return true is successfully initialised this class instance, else false
  */
-bool CStructure3D::Init(void)
+bool CSpeedUpbox::Init(void)
 {
 	// Call the parent's Init()
 	CSolidObject::Init();
 
 	// Set the type
-	SetType(CEntity3D::TYPE::STRUCTURE);
+	SetType(CEntity3D::TYPE::POWER_UP);
 
 	// Generate and bind the VAO
 	glGenVertexArrays(1, &VAO);
@@ -66,10 +66,10 @@ bool CStructure3D::Init(void)
 	mesh = CMeshBuilder::GenerateBox(glm::vec4(0.0f, 0.0f, 1.0f, 1.0f));
 
 	// load and create a texture 
-	iTextureID = CImageLoader::GetInstance()->LoadTextureGetID("Image/Scene3D_Structure_01.tga", false);
+	iTextureID = CImageLoader::GetInstance()->LoadTextureGetID("Image/SpeedUp.jpg", false);
 	if (iTextureID == 0)
 	{
-		cout << "Unable to load Image/Scene3D_Structure_01.tga" << endl;
+		cout << "Unable to load Image/SpeedUp.tga" << endl;
 		return false;
 	}
 
@@ -81,7 +81,7 @@ bool CStructure3D::Init(void)
  @brief Set model
  @param model A const glm::mat4 variable containing the model for this class instance
  */
-void CStructure3D::SetModel(const glm::mat4 model)
+void CSpeedUpbox::SetModel(const glm::mat4 model)
 {
 	this->model = model;
 }
@@ -90,7 +90,7 @@ void CStructure3D::SetModel(const glm::mat4 model)
  @brief Set view
  @param view A const glm::mat4 variable containing the model for this class instance
  */
-void CStructure3D::SetView(const glm::mat4 view)
+void CSpeedUpbox::SetView(const glm::mat4 view)
 {
 	this->view = view;
 }
@@ -99,7 +99,7 @@ void CStructure3D::SetView(const glm::mat4 view)
  @brief Set projection
  @param projection A const glm::mat4 variable containing the model for this class instance
  */
-void CStructure3D::SetProjection(const glm::mat4 projection)
+void CSpeedUpbox::SetProjection(const glm::mat4 projection)
 {
 	this->projection = projection;
 }
@@ -109,7 +109,7 @@ void CStructure3D::SetProjection(const glm::mat4 projection)
  @param dt A const double variable containing the elapsed time since the last frame
  @return A bool variable
  */
-bool CStructure3D::Update(const double dElapsedTime)
+bool CSpeedUpbox::Update(const double dElapsedTime)
 {
 	CSolidObject::Update(dElapsedTime);
 
@@ -119,7 +119,7 @@ bool CStructure3D::Update(const double dElapsedTime)
 /**
 @brief PreRender Set up the OpenGL display environment before rendering
 */
-void CStructure3D::PreRender(void)
+void CSpeedUpbox::PreRender(void)
 {
 	CSolidObject::PreRender();
 }
@@ -128,7 +128,7 @@ void CStructure3D::PreRender(void)
 @brief Render Render this instance
 @param cShader A Shader* variable which contains the Shader to use in this class instance
 */
-void CStructure3D::Render(void)
+void CSpeedUpbox::Render(void)
 {
 	CSolidObject::Render();
 }
@@ -136,7 +136,7 @@ void CStructure3D::Render(void)
 /**
 @brief PostRender Set up the OpenGL display environment after rendering.
 */
-void CStructure3D::PostRender(void)
+void CSpeedUpbox::PostRender(void)
 {
 	CSolidObject::PostRender();
 }

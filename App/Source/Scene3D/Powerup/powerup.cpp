@@ -2,12 +2,16 @@
 
 powerup::powerup()
 {
+	powertype = NUM_POWERUPTYPE;
+	timeLeft = 5.f;
+	dead = false;
 }
 
-powerup::powerup(POWERUPTYPE power1, float timer2)
+powerup::powerup(POWERUPTYPE power1, float timeL)
 {
-	timer = timer2;
 	powertype = power1;
+	timeLeft = timeL;
+	dead = false;
 }
 
 powerup::~powerup()
@@ -21,29 +25,29 @@ powerup::POWERUPTYPE powerup::getpowertype()
 	return powertype;
 }
 
-void powerup::Speed(CEntity3D* owner, double dt)
+void powerup::Speed( double dt)
 {
-	powerupACTION(dt);
+	decreaseTime(dt);
 	if (timeLeft <= 0.f)
 	{
-		owner->SetMovementSpeed(owner->GetMovementSpeed() * 2.0f);
+		//owner->SetMovementSpeed(owner->GetMovementSpeed() * 2.0f);
 	}
 	else
 	{
-		owner->SetMovementSpeed(owner->GetMovementSpeed() * 0.5f);
+		//owner->SetMovementSpeed(owner->GetMovementSpeed() * 0.5f);
 	}
 	return;
 }
 
-void powerup::Update(CEntity3D* owner, double dt)
+powerup::POWERUPTYPE powerup::Update(double dt)
 {
 	switch (powertype)
 	{
 	case SPEED:
-		Speed(owner, dt);
-
+		decreaseTime(dt);
 		break;
 	}
+	return NUM_POWERUPTYPE;
 }
 
 void powerup::setpowertype(POWERUPTYPE power)
@@ -51,17 +55,27 @@ void powerup::setpowertype(POWERUPTYPE power)
 	this->powertype = power;
 }
 
-void powerup::settimer(float timer1)
+void powerup::setTimeLeft(float timeL)
 {
-	this->timer = timer1;
+	timeLeft = timeL;
 }
 
-float powerup::gettimer()
+float powerup::getTimeLeft()
 {
-	return timer;
+	return timeLeft;
 }
 
-void powerup::powerupACTION(double dt)
+void powerup::decreaseTime(double dt)
 {
-	timer -= dt;
+	timeLeft -= dt;
+}
+
+void powerup::setDead(bool dead)
+{
+	this->dead = dead;
+}
+
+bool powerup::getDead()
+{
+	return dead;
 }

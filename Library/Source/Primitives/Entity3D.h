@@ -25,7 +25,7 @@
 #include <string>
 
 #include<vector>
-#include"../App/Source/Scene3D/Powerup/powerup.h"
+#include "../App/Source/Scene3D/Powerup/powerup.h"
 using namespace std;
 
 class CEntity3D
@@ -43,6 +43,8 @@ public:
 		POWER_UP,
 		NUM_TYPES
 	};
+
+	
 
 	// Constructor(s)
     CEntity3D(void);
@@ -112,7 +114,9 @@ public:
 	virtual void PostRender(void) = 0;
 
 	// Powerup Method
-	virtual void PowerupCheck(const double dElapsedTime);
+	virtual void PowerupUpdate(const double dElapsedTime);
+	virtual void AddPowerup(powerup::POWERUPTYPE pType, float newTime);
+	virtual bool AddPowerupTime(powerup::POWERUPTYPE pType, float newT);
 protected:
 	// The handle to the CSettings instance
 	CSettings* cSettings;
@@ -166,5 +170,6 @@ protected:
 	int currentHP;
 	int maxHP;
 
+	//POWERUPTYPE activepowerList;
 	std::vector<powerup*> activepowerList;
 };
