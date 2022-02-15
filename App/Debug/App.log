@@ -1,1 +1,11 @@
-﻿  App.vcxproj -> C:\Users\Ridwan\source\repos\SP4\Debug\App.exe
+﻿  PowerUpManager.cpp
+  Application.cpp
+  FSM.cpp
+  Camera.cpp
+  SolidObject.cpp
+  SolidObjectManager.cpp
+  vertexBufferObject.cpp
+  SoundInfo.cpp
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  App.vcxproj -> C:\Users\Julius\source\repos\StudioProjectNumber4\Debug\App.exe

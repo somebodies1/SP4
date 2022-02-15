@@ -51,8 +51,8 @@
     <Filter Include="Scene3D\AI">
       <UniqueIdentifier>{1804a80e-c966-4030-918c-16188e85b909}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Powerup">
-      <UniqueIdentifier>{27d4d6f3-7262-4328-8649-579009eec037}</UniqueIdentifier>
+    <Filter Include="Scene3D\Powerup">
+      <UniqueIdentifier>{de1f5354-341d-49a4-9e4c-30395ef8491a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -257,8 +257,11 @@
     <ClCompile Include="Source\Scene3D\CameraEffects\SweatScreen.cpp">
       <Filter>Scene3D\CameraEffects</Filter>
     </ClCompile>
-    <ClCompile Include="powerup.cpp">
-      <Filter>Powerup</Filter>
+    <ClCompile Include="Source\Scene3D\Powerup\powerup.cpp">
+      <Filter>Scene3D\Powerup</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene3D\Powerup\PowerUpManager.cpp">
+      <Filter>Scene3D\Powerup</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -463,8 +466,11 @@
     <ClInclude Include="Source\Scene3D\CameraEffects\SweatScreen.h">
       <Filter>Scene3D\CameraEffects</Filter>
     </ClInclude>
-    <ClInclude Include="powerup.h">
-      <Filter>Powerup</Filter>
+    <ClInclude Include="Source\Scene3D\Powerup\powerup.h">
+      <Filter>Scene3D\Powerup</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene3D\Powerup\PowerUpManager.h">
+      <Filter>Scene3D\Powerup</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
