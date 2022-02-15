@@ -10,6 +10,7 @@ PowerUpManager::~PowerUpManager()
 
 void PowerUpManager::UpdatePowerUpEffect(double dt)
 {
+
 }
 
 float PowerUpManager::GetSpawnTimer()

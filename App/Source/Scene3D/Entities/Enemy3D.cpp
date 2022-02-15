@@ -345,7 +345,7 @@ bool CEnemy3D::Update(const double dElapsedTime)
 
 	// Store the enemy's current position, if rollback is needed.
 	StorePositionForRollback();
-
+	CEntity3D::PowerupCheck(dElapsedTime);
 	switch (sCurrentFSM)
 	{
 	case FSM::IDLE:

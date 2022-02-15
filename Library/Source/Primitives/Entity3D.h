@@ -23,6 +23,9 @@
 #include "Mesh.h"
 
 #include <string>
+
+#include<vector>
+#include"../App/Source/Scene3D/Powerup/powerup.h"
 using namespace std;
 
 class CEntity3D
@@ -37,6 +40,7 @@ public:
 		STRUCTURE,	// Buildings etc
 		PROJECTILE,
 		CARD_PROJECTILE,
+		POWER_UP,
 		NUM_TYPES
 	};
 
@@ -107,6 +111,8 @@ public:
 	// PostRender
 	virtual void PostRender(void) = 0;
 
+	// Powerup Method
+	virtual void PowerupCheck(const double dElapsedTime);
 protected:
 	// The handle to the CSettings instance
 	CSettings* cSettings;
@@ -159,4 +165,6 @@ protected:
 	// HP to check if dead
 	int currentHP;
 	int maxHP;
+
+	std::vector<powerup*> activepowerList;
 };

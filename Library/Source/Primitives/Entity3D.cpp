@@ -237,3 +237,11 @@ void CEntity3D::RollbackPosition(void)
 	vec3Position = vec3PreviousPosition;
 }
 
+void CEntity3D::PowerupCheck(const double dElapsedTime)
+{
+	for (int i = 0; i < activepowerList.size(); i++)
+	{
+		activepowerList[i]->Update(this, dElapsedTime);
+	}
+}
+

@@ -21,6 +21,31 @@ powerup::POWERUPTYPE powerup::getpowertype()
 	return powertype;
 }
 
+void powerup::Speed(CEntity3D* owner, double dt)
+{
+	powerupACTION(dt);
+	if (timeLeft <= 0.f)
+	{
+		owner->SetMovementSpeed(owner->GetMovementSpeed() * 2.0f);
+	}
+	else
+	{
+		owner->SetMovementSpeed(owner->GetMovementSpeed() * 0.5f);
+	}
+	return;
+}
+
+void powerup::Update(CEntity3D* owner, double dt)
+{
+	switch (powertype)
+	{
+	case SPEED:
+		Speed(owner, dt);
+
+		break;
+	}
+}
+
 void powerup::setpowertype(POWERUPTYPE power)
 {
 	this->powertype = power;
