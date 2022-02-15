@@ -164,7 +164,7 @@ bool CEnemy3D::Init(void)
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
 	// load and create a texture 
-	iTextureID = CImageLoader::GetInstance()->LoadTextureGetID("Image/caveman.png", false);
+	iTextureID = CImageLoader::GetInstance()->LoadTextureGetID("Model/Enemy/caveman.png", false);
 	if (iTextureID == 0)
 	{
 		cout << "Unable to load caveman png" << endl;
