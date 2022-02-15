@@ -58,6 +58,7 @@ public:
 		NUM_SMOVEMENTS
 	};
 
+	const float PLAYER_SPEED = 2.5f;
 	// Player Attributes
 	glm::vec3 vec3Up;
 	glm::vec3 vec3Right;

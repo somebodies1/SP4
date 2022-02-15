@@ -265,9 +265,11 @@ bool CSolidObjectManager::CheckForCollision(void)
 					))
 				{
 					(*it)->RollbackPosition();
+					(*it)->AddPowerup((*it),powerup::SPEED, 5.f);
 					//if (((*it)->GetType() == CSolidObject::TYPE::PLAYER))
 						//bResult = true;
-						(*it_other)->SetStatus(false);
+					std::cout << (*it)->GetMovementSpeed() << std::endl;
+					(*it_other)->SetStatus(false);
 						cout << "** Collision between Entity and powerUP ***" << endl;
 					break;
 				}

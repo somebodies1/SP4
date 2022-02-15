@@ -47,7 +47,7 @@ powerup::POWERUPTYPE powerup::Update(double dt)
 		decreaseTime(dt);
 		break;
 	}
-	return NUM_POWERUPTYPE;
+	return powertype;
 }
 
 void powerup::setpowertype(POWERUPTYPE power)

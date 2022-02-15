@@ -69,7 +69,7 @@ bool CSpeedUpbox::Init(void)
 	iTextureID = CImageLoader::GetInstance()->LoadTextureGetID("Image/SpeedUp.jpg", false);
 	if (iTextureID == 0)
 	{
-		cout << "Unable to load Image/SpeedUp.tga" << endl;
+		cout << "Unable to load Image/SpeedUp.jpg" << endl;
 		return false;
 	}
 
@@ -111,6 +111,9 @@ void CSpeedUpbox::SetProjection(const glm::mat4 projection)
  */
 bool CSpeedUpbox::Update(const double dElapsedTime)
 {
+    if (bStatus == false)
+        return false;
+
 	CSolidObject::Update(dElapsedTime);
 
 	return true;
@@ -121,6 +124,8 @@ bool CSpeedUpbox::Update(const double dElapsedTime)
 */
 void CSpeedUpbox::PreRender(void)
 {
+    if (bStatus == false)
+        return;
 	CSolidObject::PreRender();
 }
 
@@ -130,6 +135,8 @@ void CSpeedUpbox::PreRender(void)
 */
 void CSpeedUpbox::Render(void)
 {
+    if (bStatus == false)
+        return;
 	CSolidObject::Render();
 }
 
@@ -138,5 +145,7 @@ void CSpeedUpbox::Render(void)
 */
 void CSpeedUpbox::PostRender(void)
 {
+    if (bStatus == false)
+        return;
 	CSolidObject::PostRender();
 }

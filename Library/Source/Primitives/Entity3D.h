@@ -115,8 +115,8 @@ public:
 
 	// Powerup Method
 	virtual void PowerupUpdate(const double dElapsedTime);
-	virtual void AddPowerup(powerup::POWERUPTYPE pType, float newTime);
-	virtual bool AddPowerupTime(powerup::POWERUPTYPE pType, float newT);
+	virtual void AddPowerup(CEntity3D* dude, powerup::POWERUPTYPE pType, float newTime);
+	virtual bool AddPowerupTime(CEntity3D* dude, powerup::POWERUPTYPE pType, float newT);
 protected:
 	// The handle to the CSettings instance
 	CSettings* cSettings;
