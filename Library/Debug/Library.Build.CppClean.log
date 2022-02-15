@@ -1,36 +1,40 @@
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\library.pdb
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\library.idb
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\shadermanager.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\spriteanimation.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\meshbuilder.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\mesh.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\levelofdetails.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\entity3d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\entity2d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\collisionmanager.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\collider.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\mousecontroller.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\keyboardcontroller.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\imgui_widgets.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\imgui_tables.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\imgui_draw.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\imgui_demo.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\imgui.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\gui.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\imgui_impl_opengl3.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\imgui_impl_glfw.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\settings.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\stopwatch.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\fpscounter.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\loadobj.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\imageloader.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\csvwriter.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\csvreader.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\textrenderer.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\debug\library.lib
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\library.tlog\cl.command.1.tlog
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\library.tlog\cl.read.1.tlog
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\library.tlog\cl.write.1.tlog
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\library.tlog\lib-link.read.1.tlog
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\library.tlog\lib-link.write.1.tlog
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\library\debug\library.tlog\lib.command.1.tlog
+d:\sp4\debug\library.pdb
+d:\sp4\debug\library.idb
+d:\sp4\library\debug\shadermanager.obj
+d:\sp4\library\debug\spriteanimation.obj
+d:\sp4\library\debug\meshbuilder.obj
+d:\sp4\library\debug\mesh.obj
+d:\sp4\library\debug\levelofdetails.obj
+d:\sp4\library\debug\entity3d.obj
+d:\sp4\library\debug\entity2d.obj
+d:\sp4\library\debug\collisionmanager.obj
+d:\sp4\library\debug\collider.obj
+d:\sp4\library\debug\mousecontroller.obj
+d:\sp4\library\debug\keyboardcontroller.obj
+d:\sp4\library\debug\imgui_widgets.obj
+d:\sp4\library\debug\imgui_tables.obj
+d:\sp4\library\debug\imgui_draw.obj
+d:\sp4\library\debug\imgui_demo.obj
+d:\sp4\library\debug\imgui.obj
+d:\sp4\library\debug\gui.obj
+d:\sp4\library\debug\imgui_impl_opengl3.obj
+d:\sp4\library\debug\imgui_impl_glfw.obj
+d:\sp4\library\debug\settings.obj
+d:\sp4\library\debug\stopwatch.obj
+d:\sp4\library\debug\fpscounter.obj
+d:\sp4\library\debug\loadobj.obj
+d:\sp4\library\debug\imageloader.obj
+d:\sp4\library\debug\csvwriter.obj
+d:\sp4\library\debug\csvreader.obj
+d:\sp4\library\debug\textrenderer.obj
+c:\users\ridwan\desktop\pie v2\year 2 sem 2\studio project 4\backup\debug\library.lib
+c:\users\julius\source\repos\studioprojectnumber4\debug\library.lib
+d:\sp4\debug\library.lib
+d:\sp4\library\debug\library.idb
+d:\sp4\library\debug\library.pdb
+d:\sp4\library\debug\library.tlog\cl.command.1.tlog
+d:\sp4\library\debug\library.tlog\cl.read.1.tlog
+d:\sp4\library\debug\library.tlog\cl.write.1.tlog
+d:\sp4\library\debug\library.tlog\lib-link.read.1.tlog
+d:\sp4\library\debug\library.tlog\lib-link.write.1.tlog
+d:\sp4\library\debug\library.tlog\lib.command.1.tlog

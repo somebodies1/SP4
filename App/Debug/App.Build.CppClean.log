@@ -1,77 +1,90 @@
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\vc142.pdb
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\vc142.idb
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\camera.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\fsm.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\scene2d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\player2d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\physics2d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\map2d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\inventorymanager.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\inventoryitem.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\gui_scene2d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\gamemanager.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\enemy2d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\backgroundentity.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\main.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\playgamestate.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\play3dgamestate.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\pausestate.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\menustate.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\introstate.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\gamestatemanager.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\application.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\suv.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\structure3d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\solidobjectmanager.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\solidobject.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\player3d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\hut_concrete.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\entitymanager.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\enemy3d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\edo.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\dinosaur.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\charano.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\baryonyx.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\winscreen.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\scopescreen.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\losescreen.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\crosshair.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\camerashake.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\cameraeffectsmanager.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\cameraeffects.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\bloodscreen.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\projectilemanager.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\projectile.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\pistol.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\card.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\waypointmanager.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\waypoint.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\vertexbufferobject.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\texture.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\terrain.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\skybox.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\wheel.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\spintower.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\scenenode.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\lvtower.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\scene3d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\physics3d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\minimap.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\gui_scene3d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\gamemanager3d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\treekabak3d.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\soundinfo.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\soundcontroller.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\weaponinfo.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\planet.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\decor.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\dirtscreen.obj
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\debug\app.exe
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\debug\app.ilk
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\debug\app.pdb
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\app.tlog\cl.command.1.tlog
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\app.tlog\cl.read.1.tlog
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\app.tlog\cl.write.1.tlog
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\app.tlog\link.command.1.tlog
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\app.tlog\link.read.1.tlog
-c:\users\ridwan\desktop\pie v2\year 2 sem 2\3d game creation\assignment 2\nyp_framework_a2\app\debug\app.tlog\link.write.1.tlog
+c:\users\ridwan\source\repos\sp4\app\debug\vc142.pdb
+c:\users\ridwan\source\repos\sp4\app\debug\vc142.idb
+c:\users\ridwan\source\repos\sp4\app\debug\camera.obj
+c:\users\ridwan\source\repos\sp4\app\debug\fsm.obj
+c:\users\ridwan\source\repos\sp4\app\debug\scene2d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\player2d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\physics2d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\map2d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\inventorymanager.obj
+c:\users\ridwan\source\repos\sp4\app\debug\inventoryitem.obj
+c:\users\ridwan\source\repos\sp4\app\debug\gui_scene2d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\gamemanager.obj
+c:\users\ridwan\source\repos\sp4\app\debug\enemy2d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\backgroundentity.obj
+c:\users\ridwan\source\repos\sp4\app\debug\main.obj
+c:\users\ridwan\source\repos\sp4\app\debug\playgamestate.obj
+c:\users\ridwan\source\repos\sp4\app\debug\play3dgamestate.obj
+c:\users\ridwan\source\repos\sp4\app\debug\pausestate.obj
+c:\users\ridwan\source\repos\sp4\app\debug\menustate.obj
+c:\users\ridwan\source\repos\sp4\app\debug\introstate.obj
+c:\users\ridwan\source\repos\sp4\app\debug\gamestatemanager.obj
+c:\users\ridwan\source\repos\sp4\app\debug\application.obj
+c:\users\ridwan\source\repos\sp4\app\debug\solidobjectmanager.obj
+c:\users\ridwan\source\repos\sp4\app\debug\solidobject.obj
+c:\users\ridwan\source\repos\sp4\app\debug\player3d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\hut_concrete.obj
+c:\users\ridwan\source\repos\sp4\app\debug\entitymanager.obj
+c:\users\ridwan\source\repos\sp4\app\debug\enemy3d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\edo.obj
+c:\users\ridwan\source\repos\sp4\app\debug\dinosaur.obj
+c:\users\ridwan\source\repos\sp4\app\debug\charano.obj
+c:\users\ridwan\source\repos\sp4\app\debug\baryonyx.obj
+c:\users\ridwan\source\repos\sp4\app\debug\winscreen.obj
+c:\users\ridwan\source\repos\sp4\app\debug\sweatscreen.obj
+c:\users\ridwan\source\repos\sp4\app\debug\scopescreen.obj
+c:\users\ridwan\source\repos\sp4\app\debug\losescreen.obj
+c:\users\ridwan\source\repos\sp4\app\debug\dirtscreen.obj
+c:\users\ridwan\source\repos\sp4\app\debug\crosshair.obj
+c:\users\ridwan\source\repos\sp4\app\debug\camerashake.obj
+c:\users\ridwan\source\repos\sp4\app\debug\cameraeffectsmanager.obj
+c:\users\ridwan\source\repos\sp4\app\debug\cameraeffects.obj
+c:\users\ridwan\source\repos\sp4\app\debug\bloodscreen.obj
+c:\users\ridwan\source\repos\sp4\app\debug\waypointmanager.obj
+c:\users\ridwan\source\repos\sp4\app\debug\waypoint.obj
+c:\users\ridwan\source\repos\sp4\app\debug\vertexbufferobject.obj
+c:\users\ridwan\source\repos\sp4\app\debug\texture.obj
+c:\users\ridwan\source\repos\sp4\app\debug\terrain.obj
+c:\users\ridwan\source\repos\sp4\app\debug\skybox.obj
+c:\users\ridwan\source\repos\sp4\app\debug\wheel.obj
+c:\users\ridwan\source\repos\sp4\app\debug\spintower.obj
+c:\users\ridwan\source\repos\sp4\app\debug\scenenode.obj
+c:\users\ridwan\source\repos\sp4\app\debug\planet.obj
+c:\users\ridwan\source\repos\sp4\app\debug\lvtower.obj
+c:\users\ridwan\source\repos\sp4\app\debug\decor.obj
+c:\users\ridwan\source\repos\sp4\app\debug\scene3d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\physics3d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\minimap.obj
+c:\users\ridwan\source\repos\sp4\app\debug\gui_scene3d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\gamemanager3d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\treekabak3d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\suv.obj
+c:\users\ridwan\source\repos\sp4\app\debug\structure3d.obj
+c:\users\ridwan\source\repos\sp4\app\debug\soundinfo.obj
+c:\users\ridwan\source\repos\sp4\app\debug\soundcontroller.obj
+c:\users\ridwan\source\repos\sp4\app\debug\weaponinfo.obj
+c:\users\ridwan\source\repos\sp4\app\debug\projectilemanager.obj
+c:\users\ridwan\source\repos\sp4\app\debug\projectile.obj
+c:\users\ridwan\source\repos\sp4\app\debug\pistol.obj
+c:\users\ridwan\source\repos\sp4\app\debug\card.obj
+c:\users\ridwan\desktop\pie v2\year 2 sem 2\studio project 4\backup\debug\app.ilk
+c:\users\ridwan\desktop\pie v2\year 2 sem 2\studio project 4\backup\debug\app.exe
+c:\users\ridwan\desktop\pie v2\year 2 sem 2\studio project 4\backup\debug\app.pdb
+c:\users\julius\source\repos\studioprojectnumber4\debug\app.exe
+c:\users\julius\source\repos\studioprojectnumber4\debug\app.ilk
+c:\users\julius\source\repos\studioprojectnumber4\debug\app.pdb
+c:\users\ridwan\source\repos\sp4\debug\app.ilk
+c:\users\ridwan\source\repos\sp4\debug\app.exe
+c:\users\ridwan\source\repos\sp4\debug\app.pdb
+d:\sp4\app\debug\app.ilk
+d:\sp4\app\debug\vc142.idb
+d:\sp4\app\debug\vc142.pdb
+d:\sp4\debug\app.pdb
+d:\sp4\debug\app.ilk
+d:\sp4\app\debug\app.tlog\cl.command.1.tlog
+d:\sp4\app\debug\app.tlog\cl.read.1.tlog
+d:\sp4\app\debug\app.tlog\cl.write.1.tlog
+d:\sp4\app\debug\app.tlog\link.command.1.tlog
+d:\sp4\app\debug\app.tlog\link.delete.1.tlog
+d:\sp4\app\debug\app.tlog\link.read.1.tlog
+d:\sp4\app\debug\app.tlog\link.write.1.tlog

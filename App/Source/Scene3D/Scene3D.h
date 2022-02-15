@@ -52,8 +52,9 @@
 #include "Entities/Structure3D.h"
 #include "Entities/SpeedUpbox.h"
 
-//Include CEnemy3D
+//Include Enemies
 #include "Entities/Enemy3D.h"
+#include "Entities/Spider.h"
 
 //Include GUI_Scene3D
 #include "GUI_Scene3D.h"
