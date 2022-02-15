@@ -46,6 +46,7 @@
 #include "SceneGraph/Decor.h"
 
 #include <iostream>
+#include "Entities/Car.h"
 using namespace std;
 
 /**
@@ -353,15 +354,16 @@ bool CScene3D::Init(void)
 
 	// Initialise a suv
 	fCheckHeight = cTerrain->GetHeight(-2.0f, 2.0f);
-	SUV* suv = new SUV(glm::vec3(5.0f, fCheckHeight, 5.0f));
-	suv->SetShader("Shader3DNoColour");
-	suv->SetLODStatus(true);
-	suv->Init();
-	suv->InitCollider("Shader3D_Line", glm::vec4(0.0f, 0.0f, 1.0f, 1.0f));
+	CCar* car = new CCar(glm::vec3(5.0f, fCheckHeight, 0.f));
+	car->SetShader("Shader3DNoColour");
+	car->SetLODStatus(true);
+	car->Init();
+	car->InitCollider("Shader3D_Line", glm::vec4(0.0f, 0.0f, 1.0f, 1.0f));
+	car->SetType(CEntity3D::CAR);
 
 	// Add the suv to the cSolidObjectManager
-	cSolidObjectManager->Add(suv);
-
+	cSolidObjectManager->Add(car);
+	
 	// Initialise a suv
 	fCheckHeight = cTerrain->GetHeight(-2.0f, 2.0f);
 	SUV* suv2 = new SUV(glm::vec3(5.0f, fCheckHeight, 5.0f));

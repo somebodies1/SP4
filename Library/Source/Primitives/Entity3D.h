@@ -41,6 +41,7 @@ public:
 		PROJECTILE,
 		CARD_PROJECTILE,
 		POWER_UP,
+		CAR,
 		NUM_TYPES
 	};
 

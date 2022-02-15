@@ -71,6 +71,11 @@
     <ClCompile Include="Source\Scene3D\WeaponInfo\WeaponInfo.cpp" />
     <ClCompile Include="Source\SoundController\SoundController.cpp" />
     <ClCompile Include="Source\SoundController\SoundInfo.cpp" />
+    <ClCompile Include="Source\Scene3D\Entities\Car.cpp" />
+    <ClCompile Include="Source\Scene3D\Math\MatrixStack.cpp" />
+    <ClCompile Include="Source\Scene3D\Math\Mtx44.cpp" />
+    <ClCompile Include="Source\Scene3D\Math\timer.cpp" />
+    <ClCompile Include="Source\Scene3D\Math\Vector3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Application.h" />
@@ -143,5 +148,11 @@
     <ClInclude Include="Source\Scene3D\WeaponInfo\WeaponInfo.h" />
     <ClInclude Include="Source\SoundController\SoundController.h" />
     <ClInclude Include="Source\SoundController\SoundInfo.h" />
+    <ClInclude Include="Source\Scene3D\Entities\Car.h" />
+    <ClInclude Include="Source\Scene3D\Math\MatrixStack.h" />
+    <ClInclude Include="Source\Scene3D\Math\Mtx44.h" />
+    <ClInclude Include="Source\Scene3D\Math\MyMath.h" />
+    <ClInclude Include="Source\Scene3D\Math\timer.h" />
+    <ClInclude Include="Source\Scene3D\Math\Vector3.h" />
   </ItemGroup>
 </Project>

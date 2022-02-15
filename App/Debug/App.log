@@ -1,3 +1,2 @@
-﻿  Enemy3D.cpp
-C:\Users\Ridwan\source\repos\SP4\App\Source\Scene3D\Entities\Enemy3D.cpp(374): warning C4715: 'CEnemy3D::DischargeWeapon': not all control paths return a value
-  App.vcxproj -> C:\Users\Ridwan\source\repos\SP4\Debug\App.exe
+﻿  Scene3D.cpp
+  App.vcxproj -> C:\Users\Xie Loong\source\repos\SP42019VS\Debug\App.exe

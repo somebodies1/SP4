@@ -42,6 +42,7 @@
     <ClCompile Include="Source\Scene3D\CameraEffects\SweatScreen.cpp" />
     <ClCompile Include="Source\Scene3D\CameraEffects\WinScreen.cpp" />
     <ClCompile Include="Source\Scene3D\Entities\Baryonyx.cpp" />
+    <ClCompile Include="Source\Scene3D\Entities\Car.cpp" />
     <ClCompile Include="Source\Scene3D\Entities\Charano.cpp" />
     <ClCompile Include="Source\Scene3D\Entities\Dinosaur.cpp" />
     <ClCompile Include="Source\Scene3D\Entities\Edo.cpp" />
@@ -57,6 +58,10 @@
     <ClCompile Include="Source\Scene3D\Entities\TreeKabak3D.cpp" />
     <ClCompile Include="Source\Scene3D\GameManager3D.cpp" />
     <ClCompile Include="Source\Scene3D\GUI_Scene3D.cpp" />
+    <ClCompile Include="Source\Scene3D\Math\MatrixStack.cpp" />
+    <ClCompile Include="Source\Scene3D\Math\Mtx44.cpp" />
+    <ClCompile Include="Source\Scene3D\Math\timer.cpp" />
+    <ClCompile Include="Source\Scene3D\Math\Vector3.cpp" />
     <ClCompile Include="Source\Scene3D\Minimap\Minimap.cpp" />
     <ClCompile Include="Source\Scene3D\Physics3D.cpp" />
     <ClCompile Include="Source\Scene3D\Powerup\powerup.cpp" />
@@ -114,6 +119,7 @@
     <ClInclude Include="Source\Scene3D\CameraEffects\SweatScreen.h" />
     <ClInclude Include="Source\Scene3D\CameraEffects\WinScreen.h" />
     <ClInclude Include="Source\Scene3D\Entities\Baryonyx.h" />
+    <ClInclude Include="Source\Scene3D\Entities\Car.h" />
     <ClInclude Include="Source\Scene3D\Entities\Charano.h" />
     <ClInclude Include="Source\Scene3D\Entities\Dinosaur.h" />
     <ClInclude Include="Source\Scene3D\Entities\Edo.h" />
@@ -129,6 +135,11 @@
     <ClInclude Include="Source\Scene3D\Entities\TreeKabak3D.h" />
     <ClInclude Include="Source\Scene3D\GameManager3D.h" />
     <ClInclude Include="Source\Scene3D\GUI_Scene3D.h" />
+    <ClInclude Include="Source\Scene3D\Math\MatrixStack.h" />
+    <ClInclude Include="Source\Scene3D\Math\Mtx44.h" />
+    <ClInclude Include="Source\Scene3D\Math\MyMath.h" />
+    <ClInclude Include="Source\Scene3D\Math\timer.h" />
+    <ClInclude Include="Source\Scene3D\Math\Vector3.h" />
     <ClInclude Include="Source\Scene3D\Minimap\Minimap.h" />
     <ClInclude Include="Source\Scene3D\Physics3D.h" />
     <ClInclude Include="Source\Scene3D\Powerup\powerup.h" />

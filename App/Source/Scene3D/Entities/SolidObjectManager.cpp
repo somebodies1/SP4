@@ -273,7 +273,17 @@ bool CSolidObjectManager::CheckForCollision(void)
 						cout << "** Collision between Entity and powerUP ***" << endl;
 					break;
 				}
-
+				if (
+					((*it)->GetType() >= CSolidObject::TYPE::PLAYER)
+					&&((*it_other)->GetType() == CSolidObject::TYPE::CAR))
+					
+				{
+					(*it)->RollbackPosition();
+					if (((*it)->GetType() == CSolidObject::TYPE::PLAYER))
+						//bResult = true;
+						cout << "** Collision between Entity and Structure ***" << endl;
+					break;
+				}
 			}
 		}
 	}

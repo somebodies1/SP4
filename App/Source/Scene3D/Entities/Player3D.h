@@ -55,6 +55,7 @@ public:
 		CROUCH,
 		PRONE,
 		SLIDE,
+		CAR,
 		NUM_SMOVEMENTS
 	};
 
