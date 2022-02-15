@@ -1,18 +1,3 @@
-﻿  Application.cpp
-  Play3DGameState.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Users\Julius\source\repos\StudioProjectNumber4\glfw\include\GLFW\glfw3.h(98): message : see previous definition of 'APIENTRY'
-  Baryonyx.cpp
-  Charano.cpp
-  Dinosaur.cpp
-  Edo.cpp
-  Enemy3D.cpp
-  Hut_Concrete.cpp
-  Player3D.cpp
-  SUV.cpp
-  GUI_Scene3D.cpp
-  PowerUpManager.cpp
-  Scene3D.cpp
-  Generating Code...
-C:\Users\Julius\source\repos\StudioProjectNumber4\App\Source\Scene3D\Entities\Enemy3D.cpp(291): warning C4715: 'CEnemy3D::DischargeWeapon': not all control paths return a value
-  App.vcxproj -> C:\Users\Julius\source\repos\StudioProjectNumber4\Debug\App.exe
+﻿  Enemy3D.cpp
+C:\Users\Ridwan\source\repos\SP4\App\Source\Scene3D\Entities\Enemy3D.cpp(374): warning C4715: 'CEnemy3D::DischargeWeapon': not all control paths return a value
+  App.vcxproj -> C:\Users\Ridwan\source\repos\SP4\Debug\App.exe

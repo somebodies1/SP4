@@ -5,14 +5,11 @@
  */
 #include "Enemy3D.h"
 
-// Include ShaderManager
+ // Include ShaderManager
 #include "RenderControl/ShaderManager.h"
 
 // Include MeshBuilder
 #include "Primitives/MeshBuilder.h"
-
- // Include LoadOBJ
-#include "System/LoadOBJ.h"
 
 // Include ImageLoader
 #include "System\ImageLoader.h"
@@ -22,6 +19,7 @@ using namespace std;
 
 // Set this to true if printing the debug info
 #define _DEBUG_FSM false
+
 /**
  @brief Default Constructor
  */
@@ -54,10 +52,10 @@ CEnemy3D::CEnemy3D(void)
  @param yaw A const float variable which contains the yaw of the camera
  @param pitch A const float variable which contains the pitch of the camera
  */
-CEnemy3D::CEnemy3D(	const glm::vec3 vec3Position,
-					const glm::vec3 vec3Front,
-					const float fYaw,
-					const float fPitch)
+CEnemy3D::CEnemy3D(const glm::vec3 vec3Position,
+	const glm::vec3 vec3Front,
+	const float fYaw,
+	const float fPitch)
 	: vec3Up(glm::vec3(0.0f, 1.0f, 0.0f))
 	, vec3Right(glm::vec3(1.0f, 1.0f, 0.0f))
 	, vec3WorldUp(glm::vec3(0.0f, 1.0f, 0.0f))
@@ -121,6 +119,89 @@ CEnemy3D::~CEnemy3D(void)
  */
 bool CEnemy3D::Init(void)
 {
+	//bool CEnemy3D::Init(void)
+	//{
+	//	// Call the parent's Init()
+	//	CSolidObject::Init();
+
+	//	// Set the type
+	//	SetType(CEntity3D::TYPE::NPC);
+
+	//	// Initialise the cPlayer3D
+	//	cPlayer3D = CPlayer3D::GetInstance();
+
+	//	std::vector<glm::vec3> vertices;
+	//	std::vector<glm::vec2> uvs;
+	//	std::vector<glm::vec3> normals;
+	//	std::vector<ModelVertex> vertex_buffer_data;
+	//	std::vector<GLuint> index_buffer_data;
+
+	//	std::string file_path = "Models/Enemy/caveman.obj";
+	//	bool success = CLoadOBJ::LoadOBJ(file_path.c_str(), vertices, uvs, normals, true);
+	//	if (!success)
+	//	{
+	//		cout << "Unable to load Models/Enemy/caveman.obj" << endl;
+	//		return false;
+	//	}
+
+	//	CLoadOBJ::IndexVBO(vertices, uvs, normals, index_buffer_data, vertex_buffer_data);
+
+	//	// Generate and bind the VAO
+	//	glGenVertexArrays(1, &VAO);
+	//	glBindVertexArray(VAO);
+	//	glGenBuffers(1, &VBO);
+	//	glGenBuffers(1, &IBO);
+
+	//	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	//	glBufferData(GL_ARRAY_BUFFER, vertex_buffer_data.size() * sizeof(ModelVertex), &vertex_buffer_data[0], GL_STATIC_DRAW);
+	//	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO);
+	//	glBufferData(GL_ELEMENT_ARRAY_BUFFER, index_buffer_data.size() * sizeof(GLuint), &index_buffer_data[0], GL_STATIC_DRAW);
+	//	iIndicesSize = index_buffer_data.size();
+	//	glEnableVertexAttribArray(0);
+	//	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(ModelVertex), (void*)0);
+	//	glEnableVertexAttribArray(1);
+	//	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(ModelVertex), (void*)(sizeof(glm::vec3) + sizeof(glm::vec3)));
+	//	glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+	//	// load and create a texture 
+	//	iTextureID = CImageLoader::GetInstance()->LoadTextureGetID("Model/Enemy/caveman.png", false);
+	//	if (iTextureID == 0)
+	//	{
+	//		cout << "Unable to load caveman png" << endl;
+	//		return false;
+	//	}
+
+	//	// Store the handler to the terrain
+	//	cTerrain = CTerrain::GetInstance();
+
+	//	// Movement Control
+	//	fMovementSpeed = 1.5f;
+	//	iCurrentNumMovement = 0;
+	//	iMaxNumMovement = 100;
+
+	//	// Detection distance for player
+	//	fDetectionDistance = 10.0f;
+
+	//	// Init cWaypointManager
+	//	cWaypointManager = new CWaypointManager();
+	//	cWaypointManager->Init();
+
+	//	// Add in some test Waypoints
+	//	//float fCheckHeight = cTerrain->GetHeight(0.0f, -30.0f);
+	//	//int m_iWayPointID = cWaypointManager->AddWaypoint(glm::vec3(10.0f, fCheckHeight, -30.0f));
+	//	//fCheckHeight = cTerrain->GetHeight(20.0f, -20.0f);
+	//	//m_iWayPointID = cWaypointManager->AddWaypoint(m_iWayPointID, glm::vec3(40.0f, fCheckHeight, 0.0f));
+	//	//fCheckHeight = cTerrain->GetHeight(-20.0f, -30.0f);
+	//	//m_iWayPointID = cWaypointManager->AddWaypoint(m_iWayPointID, glm::vec3(-20.0f, fCheckHeight, 0.0f));
+
+	//	//cWaypointManager->PrintSelf();
+
+	//	//// Let the NPC face the nearest waypoint
+	//	vec3Front = glm::normalize((cWaypointManager->GetNearestWaypoint(vec3Position)->GetPosition() - vec3Position));
+	//	UpdateFrontAndYaw();
+
+	//	return true;
+	//}
 	// Call the parent's Init()
 	CSolidObject::Init();
 
@@ -130,44 +211,17 @@ bool CEnemy3D::Init(void)
 	// Initialise the cPlayer3D
 	cPlayer3D = CPlayer3D::GetInstance();
 
-	std::vector<glm::vec3> vertices;
-	std::vector<glm::vec2> uvs;
-	std::vector<glm::vec3> normals;
-	std::vector<ModelVertex> vertex_buffer_data;
-	std::vector<GLuint> index_buffer_data;	
-
-	std::string file_path = "Models/Enemy/caveman.obj";
-	bool success = CLoadOBJ::LoadOBJ(file_path.c_str(), vertices, uvs, normals, true);
-	if (!success)
-	{
-		cout << "Unable to load Models/Pistol/gun_type64_01.obj" << endl;
-		return false;
-	}
-
-	CLoadOBJ::IndexVBO(vertices, uvs, normals, index_buffer_data, vertex_buffer_data);
-
 	// Generate and bind the VAO
 	glGenVertexArrays(1, &VAO);
 	glBindVertexArray(VAO);
-	glGenBuffers(1, &VBO);
-	glGenBuffers(1, &IBO);
 
-	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	glBufferData(GL_ARRAY_BUFFER, vertex_buffer_data.size() * sizeof(ModelVertex), &vertex_buffer_data[0], GL_STATIC_DRAW);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, index_buffer_data.size() * sizeof(GLuint), &index_buffer_data[0], GL_STATIC_DRAW);
-	iIndicesSize = index_buffer_data.size();
-	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(ModelVertex), (void*)0);
-	glEnableVertexAttribArray(1);
-	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(ModelVertex), (void*)(sizeof(glm::vec3) + sizeof(glm::vec3)));
-	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	mesh = CMeshBuilder::GenerateBox(glm::vec4(1, 1, 1, 1));
 
 	// load and create a texture 
-	iTextureID = CImageLoader::GetInstance()->LoadTextureGetID("Model/Enemy/caveman.png", false);
+	iTextureID = CImageLoader::GetInstance()->LoadTextureGetID("Image/Scene3D_Enemy_01.tga", false);
 	if (iTextureID == 0)
 	{
-		cout << "Unable to load caveman png" << endl;
+		cout << "Unable to load Image/Scene3D_Enemy_01.tga" << endl;
 		return false;
 	}
 
@@ -183,16 +237,23 @@ bool CEnemy3D::Init(void)
 	fDetectionDistance = 10.0f;
 
 	// Init cWaypointManager
-	cWaypointManager = new CWaypointManager();
+	cWaypointManager = new CWaypointManager;
 	cWaypointManager->Init();
 
-	// Add in some test Waypoints
+	//// Add in some test Waypoints
 	//float fCheckHeight = cTerrain->GetHeight(0.0f, -30.0f);
-	//int m_iWayPointID = cWaypointManager->AddWaypoint(glm::vec3(10.0f, fCheckHeight, -30.0f));
+	//int m_iWayPointID = cWaypointManager->AddWaypoint(glm::vec3(0.0f, fCheckHeight, -30.0f));
 	//fCheckHeight = cTerrain->GetHeight(20.0f, -20.0f);
-	//m_iWayPointID = cWaypointManager->AddWaypoint(m_iWayPointID, glm::vec3(40.0f, fCheckHeight, 0.0f));
+	//m_iWayPointID = cWaypointManager->AddWaypoint(m_iWayPointID, glm::vec3(30.0f, fCheckHeight, 0.0f));
 	//fCheckHeight = cTerrain->GetHeight(-20.0f, -30.0f);
-	//m_iWayPointID = cWaypointManager->AddWaypoint(m_iWayPointID, glm::vec3(-20.0f, fCheckHeight, 0.0f));
+	//m_iWayPointID = cWaypointManager->AddWaypoint(m_iWayPointID, glm::vec3(-30.0f, fCheckHeight, 0.0f));
+
+	float fCheckHeight = cTerrain->GetHeight(0.0f, -30.0f);
+	int m_iWayPointID = cWaypointManager->AddWaypoint(glm::vec3(10.0f, fCheckHeight, -30.0f));
+	fCheckHeight = cTerrain->GetHeight(20.0f, -20.0f);
+	m_iWayPointID = cWaypointManager->AddWaypoint(m_iWayPointID, glm::vec3(40.0f, fCheckHeight, 0.0f));
+	fCheckHeight = cTerrain->GetHeight(-20.0f, -30.0f);
+	m_iWayPointID = cWaypointManager->AddWaypoint(m_iWayPointID, glm::vec3(-20.0f, fCheckHeight, 0.0f));
 
 	//cWaypointManager->PrintSelf();
 
@@ -319,7 +380,7 @@ bool CEnemy3D::DischargeWeapon(void) const
  */
 void CEnemy3D::ProcessMovement(const ENEMYMOVEMENT direction, const float deltaTime)
 {
-	float velocity = fMovementSpeed* deltaTime;
+	float velocity = fMovementSpeed * deltaTime;
 	if (direction == ENEMYMOVEMENT::FORWARD)
 		vec3Position += vec3Front * velocity;
 	if (direction == ENEMYMOVEMENT::BACKWARD)
@@ -368,6 +429,7 @@ bool CEnemy3D::Update(const double dElapsedTime)
 	// Store the enemy's current position, if rollback is needed.
 	StorePositionForRollback();
 	CEntity3D::PowerupUpdate(dElapsedTime);
+
 	switch (sCurrentFSM)
 	{
 	case FSM::IDLE:
@@ -541,12 +603,12 @@ void CEnemy3D::UpdateEnemyVectors(void)
 	front.y = sin(glm::radians(fPitch));
 	front.z = sin(glm::radians(fYaw)) * cos(glm::radians(fPitch));
 	front = glm::normalize(front);
-	
+
 	vec3Front = front;
 	// Also re-calculate the Right and Up vector
 	// Normalize the vectors, because their length gets closer to 0 the more 
 	// you look up or down which results in slower movement.
-	vec3Right = glm::normalize(glm::cross(vec3Front, vec3WorldUp));  
+	vec3Right = glm::normalize(glm::cross(vec3Front, vec3WorldUp));
 	vec3Up = glm::normalize(glm::cross(vec3Right, vec3Front));
 
 	// If the camera is attached to this player, then update the camera
